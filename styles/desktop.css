@@ -1,0 +1,75 @@
+.container {
+    width: 1000px;
+    margin:0 auto;
+}
+
+header {
+    text-align: center;
+}
+body {
+    font-family: arial,sans-serif;
+}
+
+.main__flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.principal {
+    width:70%;
+    margin-right:1rem;
+    background-color: grey;
+    padding-bottom: 1rem;
+}
+
+.name__and__surname {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.area {
+    margin-left: 1rem;
+}
+
+.casilla {
+    width: 18rem;
+}
+
+.options {
+    display: flex;
+}
+
+/* clases aside - carrito */
+
+.aside {
+    width:30%;
+    padding:1rem;
+    background-color: grey;
+    height: 25rem;
+
+}
+
+.aside__title {
+    display: flex;
+    justify-content:space-between;
+}
+
+.aside__product {
+    display: flex;
+    justify-content:space-between;
+
+}
+
+/* fin clases aside - carrito */
+
+
+/* clases para añadir con javascript */
+
+.desaparece {
+    display: none;
+}
+
+.mensaje__instertado {
+    margin-top: 0px;
+    padding-top:1rem
+}

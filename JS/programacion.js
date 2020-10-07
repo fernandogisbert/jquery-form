@@ -7,28 +7,28 @@ var boton = document.getElementById('button');
 
 
 function formulario() {
-    // Recojo en variables los datos del formulario
+    // Recojo en variables los datos del formulario con selectores jquery
 
-    let nombre = document.getElementById('nombre').value;
-    let apellido = document.getElementById('apellidos').value;
-    let usuario = document.getElementById('nombre__usuario').value;
-    let email = document.getElementById('correo').value;
-    let direccion1 = document.getElementById('direccion').value;
-    let direccion2 = document.getElementById('direccion__secundaria').value;
-    let paisElegido = document.getElementById('pais').value;
-    let ciudad = document.getElementById('ciudad').value;
-    let zip = document.getElementById('codigo__postal').value;
-    let casilla1 = document.getElementById('checkbox1').value;
-    let casilla2 = document.getElementById('checkbox2').value;
+    let nombre = $("#nombre").val();
+    let apellido = $('#apellidos').val();
+    let usuario = $('#nombre__usuario').val();
+    let email = $('#correo').val();
+    let direccion1 = $('#direccion').val();
+    let direccion2 = $('#direccion__secundaria').val();
+    let paisElegido = $('#pais').val();
+    let ciudad = $('#ciudad').val();
+    let zip = $('#codigo__postal').val();
+    let casilla1 = $('#checkbox1').val();
+    let casilla2 = $('#checkbox2').val();
 
     // guardo en variable el formulario principal y donde quiero que salga
 
-    let formularioPrincipal = document.getElementById('principal');
+    let formularioPrincipal = $('#principal');
     let zonaParaQueSalgaLoNuevo = document.getElementById('captura');
 
     // hago desaparecer el formulario 
 
-    formularioPrincipal.classList.add('desaparece');
+    formularioPrincipal.addClass('desaparece'); //classList.add('desaparece');
 
     // meto la captura de los datos 
 
